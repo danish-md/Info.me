@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".DetailsInfoActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/usern"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:text="Name"
+            android:layout_weight="1"
+            />
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/delete" />
+    </LinearLayout>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/waCard"
+            >
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:id="@+id/WALogo"
+                android:layout_height="60dp"
+                android:src="@drawable/whatsapp"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Whatsapp"
+                android:layout_marginStart="70dp"
+                android:textSize="20sp"
+                android:textColor="#000000">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/n_a"
+                android:id="@+id/watext"
+                />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/igCard"
+            >
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:id="@+id/Instalogo"
+                android:layout_height="60dp"
+                android:src="@drawable/insta"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instagram"
+                android:layout_marginStart="70dp"
+                android:textSize="20sp"
+                android:textColor="#000000">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n_a"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/igtext"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/scCard"
+            >
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:id="@+id/SnapLogo"
+                android:layout_height="60dp"
+                android:src="@drawable/snap"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Snapchat"
+                android:layout_marginStart="70dp"
+                android:textSize="20sp"
+                android:textColor="#000000">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n_a"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/sctext"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:id="@+id/fbCard"
+            >
+
+
+            <ImageView
+                android:layout_width="60dp"
+                android:id="@+id/FbLogo"
+                android:layout_height="60dp"
+                android:src="@drawable/fb"
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Facebook"
+                android:layout_marginStart="70dp"
+                android:textSize="20sp"
+                android:textColor="#000000">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/n_a"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="30dp"
+                android:id="@+id/fbtext"
+                />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+</LinearLayout>

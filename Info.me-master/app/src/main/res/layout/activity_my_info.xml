@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MyInfo_Activity">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="10dp">
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/edit_text"
+        android:visibility="visible"
+        android:id="@+id/EditBut"/>
+    <Button
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/edit_done"
+        android:layout_gravity="end"
+        android:visibility="gone"
+        android:id="@+id/EditDone"/>
+</RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="USERNAME"
+        android:id="@+id/username"
+        android:inputType="textCapCharacters"
+        android:fontFamily="sans-serif-black"
+        android:backgroundTint="#00000000"
+        android:layout_gravity="center"
+        android:textSize="24sp"
+        />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/WhatsAppCard"
+        >
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:id="@+id/WALogo"
+            android:layout_height="60dp"
+            android:src="@drawable/whatsapp"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Whatsapp"
+            android:layout_marginStart="70dp"
+            android:textSize="20sp"
+            android:textColor="#000000">
+
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="+xx"
+            android:backgroundTint="#00000000"
+            android:inputType="phone"
+            android:maxLength="3"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/WAInputCode"
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter number!"
+            android:inputType="phone"
+            android:backgroundTint="#00000000"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/WAInput"
+            />
+
+        <Button
+            android:layout_width="60dp"
+            android:text="Go"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="end"
+            android:id="@+id/WAButton"
+            android:layout_height="40dp"/>
+
+
+        <Switch
+            android:id="@+id/switchwa"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:checked="true"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/InstaCard"
+        >
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:id="@+id/Instalogo"
+            android:layout_height="60dp"
+            android:src="@drawable/insta"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Instagram"
+            android:layout_marginStart="70dp"
+            android:textSize="20sp"
+            android:textColor="#000000">
+
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter username!"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#00000000"
+            android:id="@+id/InstaTextId"
+            />
+        <Button
+            android:layout_width="60dp"
+            android:text="Go"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="end"
+            android:id="@+id/InstaButton"
+            android:layout_height="40dp"/>
+
+
+        <Switch
+            android:id="@+id/switchig"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:checked="true"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/SnapCard"
+        >
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:id="@+id/SnapLogo"
+            android:layout_height="60dp"
+            android:src="@drawable/snap"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Snapchat"
+            android:layout_marginStart="70dp"
+            android:textSize="20sp"
+            android:textColor="#000000">
+
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter username!"
+            android:backgroundTint="#00000000"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/SnapText"
+            />
+        <Button
+            android:layout_width="60dp"
+            android:text="Go"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="end"
+            android:id="@+id/SnapButton"
+            android:layout_height="40dp"/>
+        <Switch
+            android:id="@+id/switchsc"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:checked="true"
+            android:layout_height="wrap_content"/>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/FbCard"
+        >
+
+
+        <ImageView
+            android:layout_width="60dp"
+            android:id="@+id/FbLogo"
+            android:layout_height="60dp"
+            android:src="@drawable/fb"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Facebook"
+            android:layout_marginStart="70dp"
+            android:textSize="20sp"
+            android:textColor="#000000">
+
+        </TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter username!"
+            android:layout_marginStart="60dp"
+            android:backgroundTint="#00000000"
+            android:layout_marginTop="20dp"
+            android:id="@+id/FbTextId"/>
+
+        <Button
+            android:layout_width="60dp"
+            android:text="Go"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="end"
+            android:id="@+id/FBButton"
+            android:layout_height="40dp"/>
+        <Switch
+            android:id="@+id/switchfb"
+            android:layout_width="wrap_content"
+            android:layout_gravity="end"
+            android:checked="true"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <Button
+        android:layout_marginTop="26dp"
+        android:layout_gravity="center"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:background="@drawable/qr_code"
+        android:id="@+id/wrappingbutton"/>
+
+
+    <Button
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TEST/SEND TO MYFRIENDS"
+        android:id="@+id/details"/>
+</LinearLayout>
+</LinearLayout>
